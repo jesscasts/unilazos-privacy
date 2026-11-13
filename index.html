@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f4fb">
+  <meta name="description" content="Política de privacidad de Unilazos para su beta Android local-only, dirigida a madres, padres y responsables adultos en Uruguay.">
+  <title>Política de privacidad de Unilazos</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #282737;
+      --muted: #625f70;
+      --lavender: #eee9f7;
+      --lavender-deep: #d8cdec;
+      --plum: #55446f;
+      --cream: #fffdf8;
+      --paper: #ffffff;
+      --line: #e9e4ed;
+      --accent: #755d91;
+      --shadow: 0 24px 70px rgba(50, 39, 68, .09);
+      --radius: 26px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 12% 0%, rgba(221, 210, 239, .68), transparent 38rem),
+        linear-gradient(180deg, #f7f4fb 0%, #fbf9f5 38rem, #f5f2f8 100%);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: #51416c; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+    a:hover { color: #352648; }
+    a:focus-visible { outline: 3px solid #9a7fc1; outline-offset: 3px; border-radius: 5px; }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 5;
+      padding: .7rem 1rem; border-radius: 999px; background: var(--paper); color: var(--ink);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .hero {
+      padding: clamp(2.5rem, 7vw, 5.5rem) 1.25rem 4.25rem;
+    }
+    .hero-inner, main, footer { width: min(100% - 2rem, 900px); margin-inline: auto; }
+    .brand {
+      display: inline-flex; align-items: center; gap: .65rem;
+      color: var(--plum); font-weight: 750; letter-spacing: .015em; text-decoration: none;
+    }
+    .brand-mark {
+      display: grid; width: 2.1rem; aspect-ratio: 1; place-items: center;
+      border: 1px solid rgba(85, 68, 111, .18); border-radius: 50%;
+      background: rgba(255, 253, 248, .82); font-size: 1.05rem;
+    }
+    .eyebrow {
+      margin: 2.3rem 0 .7rem; color: var(--plum); font-size: .78rem;
+      font-weight: 750; letter-spacing: .12em; text-transform: uppercase;
+    }
+    h1 {
+      max-width: 760px; margin: 0; color: #2c2637;
+      font-size: clamp(2.25rem, 6vw, 4.1rem); font-weight: 720;
+      letter-spacing: -.045em; line-height: 1.08;
+    }
+    .hero-copy { max-width: 680px; margin: 1.15rem 0 0; color: var(--muted); font-size: clamp(1rem, 2vw, 1.15rem); }
+
+    main { margin-top: -1.6rem; }
+    .sheet {
+      overflow: hidden; border: 1px solid rgba(110, 91, 132, .12);
+      border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow);
+    }
+    .meta {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0;
+      padding: 1.6rem clamp(1.2rem, 4vw, 2.5rem); background: var(--cream);
+      border-bottom: 1px solid var(--line);
+    }
+    .meta-item { padding: .7rem .9rem; border-bottom: 1px solid var(--line); }
+    .meta-item:nth-last-child(-n+2) { border-bottom: 0; }
+    .meta dt { color: var(--muted); font-size: .77rem; font-weight: 700; letter-spacing: .045em; text-transform: uppercase; }
+    .meta dd { margin: .14rem 0 0; font-weight: 620; }
+
+    .contents {
+      margin: clamp(1.25rem, 4vw, 2.1rem) clamp(1.2rem, 4vw, 2.5rem) 0;
+      padding: 1.2rem 1.35rem; border: 1px solid var(--line); border-radius: 18px;
+      background: #fcfbfe;
+    }
+    .contents-title { margin: 0 0 .7rem; color: var(--plum); font-size: .9rem; font-weight: 750; }
+    .contents ol {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .35rem 1.5rem;
+      margin: 0; padding-left: 1.25rem; color: var(--muted); font-size: .92rem;
+    }
+    .contents a { text-decoration: none; }
+    .contents a:hover { text-decoration: underline; }
+
+    article { padding: .4rem clamp(1.2rem, 5vw, 3.1rem) 2.2rem; }
+    article section { padding: 1.6rem 0 1.35rem; border-bottom: 1px solid var(--line); scroll-margin-top: 1rem; }
+    article section:last-child { border-bottom: 0; }
+    h2 { margin: 0 0 .8rem; color: #352a43; font-size: clamp(1.2rem, 2.5vw, 1.48rem); letter-spacing: -.018em; line-height: 1.32; }
+    p { margin: .65rem 0; }
+    ul { margin: .6rem 0 1rem; padding-left: 1.35rem; }
+    li { margin: .35rem 0; padding-left: .15rem; }
+    strong { color: #342a42; font-weight: 700; }
+    .contact { overflow-wrap: anywhere; }
+
+    footer { padding: 1.7rem 0 3rem; color: var(--muted); font-size: .88rem; text-align: center; }
+    footer p { margin: .3rem 0; }
+
+    @media (max-width: 600px) {
+      body { font-size: 15.5px; }
+      .hero { padding: 2.2rem 1rem 3.25rem; }
+      .hero-inner, main, footer { width: min(100% - 1.25rem, 900px); }
+      .eyebrow { margin-top: 1.8rem; }
+      main { margin-top: -1rem; }
+      .sheet { border-radius: 20px; }
+      .meta { grid-template-columns: 1fr; padding: 1rem; }
+      .meta-item { padding: .62rem .55rem; border-bottom: 1px solid var(--line) !important; }
+      .meta-item:last-child { border-bottom: 0 !important; }
+      .contents { margin: 1rem 1rem 0; padding: 1rem; }
+      .contents ol { grid-template-columns: 1fr; gap: .32rem; }
+      article { padding: .15rem 1.15rem 1.6rem; }
+      article section { padding: 1.25rem 0 1.1rem; }
+      ul { padding-left: 1.15rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media print {
+      body { background: #fff; }
+      .hero { padding: 1rem 0 2.5rem; }
+      main { margin-top: 0; }
+      .sheet { border: 0; box-shadow: none; }
+      .contents { display: none; }
+      footer { padding-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="brand" href="#inicio" aria-label="Unilazos, inicio de la política">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Unilazos</span>
+      </a>
+      <p class="eyebrow">Privacidad · Beta Android local-only</p>
+      <h1 id="inicio">Política de privacidad de Unilazos</h1>
+      <p class="hero-copy">Información sobre el uso y la eliminación de datos en la beta Android de Unilazos.</p>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div class="sheet">
+      <dl class="meta" aria-label="Datos de esta política">
+        <div class="meta-item"><dt>Última actualización</dt><dd>13 de noviembre de 2026</dd></div>
+        <div class="meta-item"><dt>Vigencia</dt><dd>Desde la publicación de esta página</dd></div>
+        <div class="meta-item"><dt>Responsable</dt><dd>Jessica Pereyra Castence, persona física</dd></div>
+        <div class="meta-item"><dt>Contacto de privacidad y soporte</dt><dd class="contact"><a href="mailto:byjessventas@gmail.com">byjessventas@gmail.com</a></dd></div>
+        <div class="meta-item"><dt>Mercado inicial</dt><dd>Uruguay</dd></div>
+        <div class="meta-item"><dt>Público previsto</dt><dd>Madres, padres y responsables adultos mayores de 18 años</dd></div>
+      </dl>
+
+      <nav class="contents" aria-label="Contenido de la política">
+        <p class="contents-title">En esta página</p>
+        <ol>
+          <li><a href="#alcance">Alcance</a></li>
+          <li><a href="#informacion">Información guardada</a></li>
+          <li><a href="#procesamiento">Procesamiento y destinatarios</a></li>
+          <li><a href="#voz">Micrófono y voz</a></li>
+          <li><a href="#calendario">Calendario</a></li>
+          <li><a href="#notificaciones">Notificaciones</a></li>
+          <li><a href="#eliminacion">Conservación y eliminación</a></li>
+          <li><a href="#seguridad">Seguridad</a></li>
+          <li><a href="#menores">Información de menores</a></li>
+          <li><a href="#consultas">Consultas y cambios</a></li>
+        </ol>
+      </nav>
+
+      <article>
+        <section id="alcance">
+          <h2>1. Alcance de esta política</h2>
+          <p>Esta política se aplica a la beta Android local-only de Unilazos. En esta beta, la aplicación puede aparecer en el dispositivo con el nombre “Mi Familia”. Unilazos está destinada a personas adultas responsables. No está dirigida a niños como usuarios y no requiere que los niños creen una cuenta.</p>
+          <p>Una persona adulta puede introducir la información necesaria para organizar a su familia, incluida información básica de niños a su cargo. Para las pruebas iniciales recomendamos usar datos ficticios y no incluir información médica, documentos de identidad ni otros datos sensibles.</p>
+        </section>
+
+        <section id="informacion">
+          <h2>2. Información que puede guardarse en el dispositivo</h2>
+          <p>La información que la persona adulta introduce o confirma puede incluir:</p>
+          <ul>
+            <li>Perfiles familiares: nombre, parentesco, rol, edad opcional, alias, avatar, disponibilidad de cuidadores y ausencias.</li>
+            <li>Organización: actividades y rutinas, fechas, horarios, participantes, responsabilidades para llevar, retirar o cuidar, estados de confirmación, solicitudes de cobertura y notas asociadas.</li>
+            <li>Pendientes del hogar: títulos, categorías, fechas, personas relacionadas y estado de cada tarea. Las categorías pueden incluir comidas, compras y medicamentos; la aplicación no brinda diagnóstico ni consejo médico.</li>
+            <li>Registro escrito con Alma: mensajes y borradores que la persona redacta, datos que confirma y preferencias de organización.</li>
+            <li>Preferencias de la aplicación: fecha seleccionada, ajustes de recordatorios y preferencias de uso de Alma.</li>
+            <li>Si la persona activa “Guardar conversación”, hasta los últimos 40 mensajes de la conversación.</li>
+            <li>Si se utiliza la función de calendario, información de los eventos del calendario elegido que se consulta para preparar un plan, además de los identificadores necesarios para reconocer eventos vinculados.</li>
+          </ul>
+          <p>Un borrador de registro puede guardarse por separado para permitir que la persona continúe más tarde. Estos datos no tienen una fecha general de vencimiento automática.</p>
+        </section>
+
+        <section id="procesamiento">
+          <h2>3. Dónde se procesa la información y con quién se comparte</h2>
+          <p>En esta beta, la información familiar se guarda en el espacio local de Unilazos en el dispositivo Android. La beta no requiere una cuenta familiar y no sincroniza perfiles, agenda, tareas, borradores ni mensajes con un servidor de Unilazos.</p>
+          <p>El registro escrito y la asistencia disponible en esta beta se procesan localmente. La beta no envía contenido familiar a servicios de inteligencia artificial, incluido OpenAI. No contiene la función de voz remota.</p>
+          <p>Al visitar esta página, la plataforma que la aloja y distribuye puede procesar datos técnicos de la solicitud, como la dirección IP y la información de enrutamiento necesaria para entregar y proteger la página, conforme a sus propias condiciones de privacidad. Esa visita no transmite por sí misma el contenido familiar almacenado en la aplicación.</p>
+        </section>
+
+        <section id="voz">
+          <h2>4. Micrófono y voz</h2>
+          <p>La beta descrita en esta política no solicita permiso de micrófono, no captura audio y no envía audio ni transcripciones a Unilazos u OpenAI. La conversación con Alma se realiza por escrito.</p>
+          <p>Si una versión futura incorpora voz remota u otro tratamiento no descrito aquí, esta política deberá actualizarse y la aplicación deberá informar y solicitar el consentimiento correspondiente antes de habilitar esa función.</p>
+        </section>
+
+        <section id="calendario">
+          <h2>5. Calendario del dispositivo</h2>
+          <p>El acceso al calendario ocurre únicamente cuando la persona abre esa función y concede permiso. Unilazos puede leer eventos del calendario elegido para preparar un plan y detectar conflictos. La persona revisa el plan y debe confirmarlo antes de que la aplicación cree, modifique o retire eventos vinculados.</p>
+          <p>Unilazos no conecta por separado con una cuenta de Google mediante un servicio propio. Si el calendario elegido está sincronizado con Google u otro proveedor en el dispositivo, ese proveedor puede sincronizar los cambios según sus propias condiciones y ajustes.</p>
+          <p>La opción de eliminar datos familiares de Unilazos no borra eventos del calendario del dispositivo. La persona debe administrarlos desde la aplicación de calendario correspondiente.</p>
+        </section>
+
+        <section id="notificaciones">
+          <h2>6. Notificaciones</h2>
+          <p>Con permiso, Unilazos programa recordatorios locales en el dispositivo para actividades familiares. La beta no usa notificaciones push ni un servicio de mensajería familiar entre teléfonos.</p>
+        </section>
+
+        <section id="eliminacion">
+          <h2>7. Conservación y eliminación</h2>
+          <p>La información local se conserva hasta que la persona la elimine, borre los datos de la aplicación desde Android o desinstale la aplicación. Los borradores y la recuperación local pueden permanecer mientras no se eliminen. El sistema operativo puede gestionar copias de seguridad de acuerdo con sus propios ajustes; Unilazos no mantiene una copia familiar propia ni puede consultar o borrar a distancia una copia del sistema.</p>
+          <p>En <strong>Ajustes</strong>, la persona puede elegir <strong>“Eliminar mis datos familiares de este dispositivo”</strong> y confirmar la operación. La función elimina del espacio familiar seleccionado los perfiles, actividades, agenda, tareas, solicitudes, datos confirmados, borradores activos y archivados, recuperación e historial conversacional, así como los recordatorios locales que pueden atribuirse con seguridad a ese espacio. Conserva las preferencias generales de uso de Alma y los demás espacios del dispositivo.</p>
+          <p>Si la aplicación no puede completar o verificar el borrado, no informa que terminó y mantiene bloqueada la restauración de los datos mientras permite reintentar. Algunas notificaciones antiguas que no se pueden atribuir con seguridad a un espacio pueden permanecer; esta protección evita cancelar recordatorios de otra familia o espacio.</p>
+          <p>La eliminación no borra eventos que ya se hayan escrito en calendarios externos ni copias que el sistema operativo haya creado. Esos elementos deben administrarse desde el calendario o la configuración del dispositivo.</p>
+        </section>
+
+        <section id="seguridad">
+          <h2>8. Seguridad</h2>
+          <p>La información familiar se guarda en el almacenamiento privado de la aplicación y queda sujeta a las protecciones de Android y del dispositivo. Unilazos no añade una capa propia de cifrado al almacenamiento familiar local. Recomendamos proteger el dispositivo con bloqueo de pantalla, mantenerlo actualizado y no compartirlo desbloqueado.</p>
+          <p>La aplicación no puede impedir que una persona con acceso al dispositivo desbloqueado vea los datos locales. Las copias de seguridad del sistema, si están habilitadas, dependen de Android y de la cuenta del dispositivo.</p>
+        </section>
+
+        <section id="menores">
+          <h2>9. Información de menores</h2>
+          <p>Unilazos está dirigida a adultos. Las personas adultas pueden añadir datos básicos de menores a su cargo para organizar actividades y cuidados. Los niños no son usuarios previstos y no necesitan una cuenta propia. La persona adulta debe limitar la información a la necesaria para organizar la vida familiar.</p>
+          <p>La categoría de tareas “medicamentos” solo permite organizar pendientes o recordatorios. Unilazos no es un expediente clínico ni sustituye el consejo de profesionales de salud.</p>
+        </section>
+
+        <section id="consultas">
+          <h2>10. Consultas y cambios a esta política</h2>
+          <p>Para consultas de privacidad, soporte o solicitudes relacionadas con la aplicación, escribe a <strong><a href="mailto:byjessventas@gmail.com">byjessventas@gmail.com</a></strong>. Como los datos familiares de esta beta se guardan en el dispositivo y no en una cuenta de Unilazos, la responsable no puede acceder a ellos ni eliminarlos a distancia. La persona puede usar la opción de eliminación local descrita en la sección 7.</p>
+          <p>Esta política se actualizará si cambian el funcionamiento de la aplicación, las categorías de información, los proveedores o los mercados en que se ofrece. La fecha de la versión vigente aparecerá al inicio de esta página.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>Unilazos · Política de privacidad</p>
+    <p>Consultas: <a href="mailto:byjessventas@gmail.com">byjessventas@gmail.com</a></p>
+  </footer>
+</body>
+</html>
